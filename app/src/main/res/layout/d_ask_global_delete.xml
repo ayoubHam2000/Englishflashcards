@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <include
+        android:id="@+id/mainHeader"
+        layout="@layout/d_header_1"/>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainHeader"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/ask_delete_op_2_info"
+        android:textColor="@color/gray2"
+        android:textSize="17sp" />
+
+    <RadioGroup
+        android:layout_below="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/deleteGlobally"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/ask_delete_op_1"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/deleteLocally"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:checked="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/ask_delete_op_2"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/deleteByHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/ask_delete_op_3"
+            android:textSize="17sp" />
+
+    </RadioGroup>
+
+</RelativeLayout>

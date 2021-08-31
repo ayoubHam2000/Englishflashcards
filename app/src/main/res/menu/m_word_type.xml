@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:title="@string/wordType1"
+        />
+    <item
+        android:id="@+id/item2"
+        android:title="@string/wordType2"
+        />
+    <item
+        android:id="@+id/item3"
+        android:title="@string/wordType3"
+        />
+    <item
+        android:id="@+id/item4"
+        android:title="@string/wordType4"
+        />
+    <item
+        android:id="@+id/item5"
+        android:title="@string/wordType5"
+        />
+    <item
+        android:id="@+id/item6"
+        android:title="@string/wordType6"
+        />
+    <item
+        android:id="@+id/item7"
+        android:title="@string/wordType7"
+        />
+</menu>

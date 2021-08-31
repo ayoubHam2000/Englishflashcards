@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:paddingVertical="15dp"
+    android:id="@+id/set_item"
+    android:gravity="center"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/item_color"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:background="@drawable/my_circle"
+        android:backgroundTint="@color/orange"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignStart="@+id/item_color"
+        android:text="Harry Potter And Philisopher Stone And Mali Cali"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textAllCaps="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/item_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_more_vert_24"
+        android:backgroundTint="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>

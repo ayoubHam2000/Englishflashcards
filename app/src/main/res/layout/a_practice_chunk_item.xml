@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/theBox"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:background="@drawable/box_width_radius"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/my_box_radius_1_1_0_0_5"
+        android:backgroundTint="@color/newColor10"
+        />
+
+    <TextView
+        android:id="@+id/itemIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="#1"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lastViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="3 Days"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/completedWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="30/50"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <ProgressBar
+        android:id="@+id/completeProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:scaleY="2"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

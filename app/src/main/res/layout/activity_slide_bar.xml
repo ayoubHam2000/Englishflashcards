@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:overScrollMode="never"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/goToSetting"
+            style="@style/slide_item_images"
+            android:background="@drawable/ic_settings_24"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/openCloseCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/categories"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/openCloseCategoriesImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_keyboard_arrow_down_24"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/categorySection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/allWords"
+                style="@style/slide_item"
+                >
+
+                <ImageView
+                    style="@style/slide_item_images"
+                    android:background="@drawable/ic_word_list"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    style="@style/slide_item_text"
+                    android:text="@string/all_words"
+                    />
+
+                <TextView
+                    android:id="@+id/allWordsNbr"
+                    style="@style/slide_item_number"
+                    android:text="240"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allFavorite"
+                style="@style/slide_item"
+                >
+
+                <ImageView
+                    style="@style/slide_item_images"
+                    android:background="@drawable/ic_favorite"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    style="@style/slide_item_text"
+                    android:text="@string/favorite_words"
+                    />
+
+                <TextView
+                    android:id="@+id/allFavoriteNbr"
+                    style="@style/slide_item_number"
+                    android:text="240"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allRemembered"
+                style="@style/slide_item"
+                >
+
+                <ImageView
+                    style="@style/slide_item_images"
+                    android:background="@drawable/ic_remember_box"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    style="@style/slide_item_text"
+                    android:text="@string/remembered_words"
+                    />
+
+                <TextView
+                    android:id="@+id/allRememberedNbr"
+                    style="@style/slide_item_number"
+                    android:text="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allDeleted"
+                style="@style/slide_item"
+                >
+
+                <ImageView
+                    style="@style/slide_item_images"
+                    android:background="@drawable/ic_delete_24"
+                    android:layout_marginStart="10dp"
+                    />
+
+                <TextView
+                    style="@style/slide_item_text"
+                    android:text="@string/deleted_words"
+                    />
+
+                <TextView
+                    android:id="@+id/allDeletedNbr"
+                    style="@style/slide_item_number"
+                    android:text="24"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="25dp"
+            android:background="@drawable/my_doted_line"
+            />
+
+        <LinearLayout
+            android:id="@+id/openCloseCollection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/collections"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/openCloseCollectionsImg"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_keyboard_arrow_down_24"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collectionSection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/set_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/add_Set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADD SET"
+                android:gravity="center"
+                android:background="@drawable/my_create_collection_btn"
+                android:textColor="@color/white"
+                android:layout_marginVertical="20dp"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="25dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="50dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

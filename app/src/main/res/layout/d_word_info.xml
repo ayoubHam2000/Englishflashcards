@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/transparent2"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/wordNameTitle"
+            android:text="House"
+            style="@style/wordInfoTitle"
+            android:layout_gravity="center"
+            android:textSize="27sp"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/yourDefinitionsTitle"
+            android:text="Your Definitions"
+            style="@style/wordInfoTitle"
+            />
+
+        <TextView
+            android:id="@+id/yourDefinitions"
+            android:text="1.there is some foud\n2.it means that you can do it"
+            style="@style/wordInfoInfo"
+            />
+
+        <TextView
+            android:id="@+id/yourExamplesTitle"
+            android:text="Your Examples"
+            style="@style/wordInfoTitle"
+            />
+
+        <TextView
+            android:id="@+id/yourExamples"
+            android:text="1.there is some foud\n2.it means that you can do it"
+            style="@style/wordInfoInfo"
+            />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            style="@style/wordInfoInfoDiver"
+            />
+
+
+        <TextView
+            android:id="@+id/definitionsTitle"
+            android:text="Definition"
+            style="@style/wordInfoTitle"
+            />
+
+        <TextView
+            android:id="@+id/definitions"
+            android:text="1.there is some foud\n2.it means that you can do it"
+            style="@style/wordInfoInfo"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/examplesTitle"
+                android:text="Examples"
+                android:layout_weight="2"
+                style="@style/wordInfoTitle"
+                />
+
+            <TextView
+                android:id="@+id/addMoreExamples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="More"
+                android:textSize="10sp"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="7dp"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <ProgressBar
+                android:id="@+id/exampleProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="3dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/examples"
+            android:text="1.there is some foud\n2.it means that you can do it"
+            style="@style/wordInfoInfo"
+            />
+
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            style="@style/wordInfoInfoDiver"
+            />
+
+        <TextView
+            android:id="@+id/originTitle"
+            android:text="Origin"
+            style="@style/wordInfoTitle"
+            />
+
+        <TextView
+            android:id="@+id/origin"
+            android:text="1.there is some foud\n2.it means that you can do it"
+            style="@style/wordInfoInfo"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

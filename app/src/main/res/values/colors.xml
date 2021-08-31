@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="addCollectionColor">#1E38DD</color>
+    
+    <color name="deletedColor">#F64747</color>
+    <color name="rememberedColor">#20BD0F</color>
+    <color name="normalColor">#1870CC</color>
+
+    <color name="t_deletedColor">#631515</color>
+    <color name="t_rememberedColor">#165A0F</color>
+    <color name="t_normalColor">#103E6E</color>
+    <color name="bottomColor">#6C6B6B</color>
+
+    <color name="trashColor">#FFFFFF</color>
+    <color name="wordDetail">#353A3C</color>
+
+<!--  Views -->
+    <color name="createNewSet">#243CDF</color>
+    <color name="rv_ofSet">#BAD6D6D6</color>
+    <color name="addCircle">#C318D6</color>
+    <color name="setBackgroundColorItem">#FFFFFF</color>
+    <color name="setBackgroundColorItemTag">#1E3DDD</color>
+    <color name="setTagBackgroundColor">#894DCD</color>
+    <color name="selectedSet">#425FF4</color>
+    <string name="favorite">#F30870</string>
+    <color name="examplesAndDefinitions">#4FF4F4F4</color>
+    <color name="addWordLayoutColor">#88000000</color>
+
+<!--  item colors  -->
+    <color name="collectionSet">#1D5AD3</color>
+
+<!-- colors -->
+    <color name="white">#ffffff</color>
+    <color name="white2">#B9FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#B8B8B8</color>
+    <color name="gray2">#555555</color>
+    <color name="keyColor">#B8B4B4</color>
+    <color name="transparent">#52000000</color>
+    <color name="transparent2">#00000000</color>
+
+    <color name="transparentForWordInfo">#74000000</color>
+
+<!--    word test colors -->
+    <color name="progressCountWord">#E73DF3</color>
+    <color name="progressLevelBar">#ffffff</color>
+    <color name="improveButton">#0FA140</color>
+    <color name="rememberedButton">#2861D3</color>
+    <color name="hideElement">#EDECEC</color>
+    <color name="co.selectedElement">#B1F6F6</color>
+
+
+    <!--  background array colors  -->
+    <color name="bright_pink">#FF007F</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#F68617</color>
+    <color name="yellowGreen">#676705</color>
+    <color name="chartreuse">#5CB504</color>
+    <color name="green">#05AE05</color>
+    <color name="spring_green">#05C665</color>
+    <color name="cyan">#05B8B8</color>
+    <color name="azure">#007FFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <color name="newColor1">#DD3D3D</color>
+    <color name="newColor2">#F46A4E</color>
+    <color name="newColor3">#F5BA06</color>
+    <color name="newColor4">#F5BA06</color>
+    <color name="newColor5">#B1C82F</color>
+    <color name="newColor6">#65CED2</color>
+    <color name="newColor7">#F39ABA</color>
+    <color name="newColor8">#A789E9</color>
+    <color name="newColor9">#889EE9</color>
+    <color name="newColor10">#6278C4</color>
+    <color name="newColor11">#9E867C</color>
+    <color name="newColor12">#A56856</color>
+
+    <color name="yellow">#F6D117</color>
+    <color name="orangeWhite">#EFA357</color>
+    <color name="orangeWhite2">#EF9439</color>
+
+    <string-array name="backgroundColors">
+        <item>
+            <item>#FF007F</item>
+            <item>#FF0000</item>
+            <item>#F68617</item>
+            <item>#676705</item>
+            <item>#5CB504</item>
+            <item>#05AE05</item>
+            <item>#05C665</item>
+            <item>#05B8B8</item>
+            <item>#007FFF</item>
+            <item>#0000FF</item>
+            <item>#7F00FF</item>
+            <item>#9E867C</item>
+            <item>#FF00FF</item>
+            <item>#DD3D3D</item>
+            <item>#6278C4</item>
+            <item>#F46A4E</item>
+            <item>#849527</item>
+            <item>#4EADB1</item>
+            <item>#E489AA</item>
+            <item>#A789E9</item>
+            <item>#889EE9</item>
+            <item>#A56856</item>
+        </item>
+    </string-array>
+</resources>

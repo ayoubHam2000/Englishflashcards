@@ -1,0 +1,117 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="wordInfoTitle">
+        <item name="android:textColor">@color/orangeWhite</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="wordInfoInfo">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+    </style>
+
+    <style name="wordInfoInfoDiver">
+        <item name="android:layout_height">0.7dp</item>
+        <item name="android:layout_marginVertical">20dp</item>
+    </style>
+
+    <style name="radioBoxOfWords">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:buttonTint">@color/orange</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="FullWidth.Dialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+    </style>
+
+    <style name="Bottom.Dialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:background">@color/transparent2</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowAnimationStyle">@style/DialogAnimation</item>-->
+
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">     @android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+
+    </style>
+
+<!--    slide bar -->
+
+    <style name="slide_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+    </style>
+
+    <style name="slide_item_images">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:backgroundTint">@color/gray2</item>
+    </style>
+
+    <style name="slide_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="slide_item_number">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="D_pickColor_image">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/my_circle</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="MainActivity_Action_Bar">
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/mergeItems"
+        android:title="@string/merge_items"
+        />
+    <item android:id="@+id/MoveTo"
+        android:title="@string/move_to"
+        />
+    <item android:id="@+id/Delete"
+        android:title="@string/delete"
+        />
+
+    <item android:id="@+id/SelectAll"
+        android:title="@string/select_all"
+        android:enabled="false"
+        />
+
+    <item android:id="@+id/DisplayHideItems"
+        android:title="@string/ac_item2"
+        android:checkable="true"
+        />
+
+
+
+</menu>

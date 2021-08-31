@@ -1,0 +1,27 @@
+private fun mergeTwoCollection(t1 : String, t2 : String){
+    //WHERE NOT EXISTS (SELECT 1 FROM $t1 WHERE $t1.name = $t2.name);
+    val temp = "temps"
+
+    val q1 = "CREATE TABLE $temp (name VARCHAR, frequency INT, createdTime BIGINT)"
+    val q2 = "INSERT INTO $temp SELECT DISTINCT * FROM (SELECT * FROM $t1 UNION ALL SELECT * FROM $t2) group by name;"
+    val q3 = "DELETE FROM $t1"
+    val q4 = "INSERT INTO $t1 SELECT * FROM $temp"
+    val q5 = "DROP TABLE $temp"
+    execute(q1)
+    execute(q2)
+    execute(q3)
+    execute(q4)
+    execute(q5)
+}
+
+fun addLevel(word : Word, add : Int){
+    val max = Settings.maxLevel
+    val time = System.currentTimeMillis()
+    if(word.level + add < max){
+        word.level += add
+    }else if(word.level != max){
+        word.level = max
+    }
+    word.lastViewedTime = time
+    DataBaseServices.updateWordLastView(word.name)
+}

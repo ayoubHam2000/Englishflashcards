@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newColor7"
+    android:backgroundTint="@color/newColor7"
+   >
+
+    <TextView
+        android:id="@+id/dailyWordsProgressNbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="1 / 100"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/dailyWordsProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dailyWordsProgressNbr"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="50"
+        android:scaleY="1.5"
+        android:progressTint="@color/white"
+        android:progressBackgroundTint="@color/black"
+        />
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box_width_radius"
+        android:backgroundTint="@color/magenta"
+        android:padding="15dp"
+        android:layout_below="@+id/dailyWordsProgress"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="17dp"
+        >
+
+        <ImageView
+            android:id="@+id/favoriteWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_favorite"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/frequencyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="F : 27"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/deleteWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_delete_24"
+            android:backgroundTint="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/AlreadyRememberedWord"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:background="@drawable/ic_remember_box"
+            android:backgroundTint="@color/white"
+
+            />
+
+        <TextView
+            android:id="@+id/theWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="17dp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="weeping"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/editWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic__edit"
+            android:backgroundTint="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/wordLevelProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:progress="50"
+            android:progressTint="@color/white" />
+
+        <TextView
+            android:id="@+id/wordLevelProgressNbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="1/9"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

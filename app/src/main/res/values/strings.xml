@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Flash Cards English</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="actionBarText">Title</string>
+    <string name="newSet">ALL SET</string>
+    <string name="createNewCollection">Add Collection</string>
+    <string name="practice">PRACTICE</string>
+    <string name="Examples">Examples</string>
+    <string name="Definitions">Definitions</string>
+
+    <!--    Views -->
+    <string name="createNewItem">Create a New Set</string>
+    <string name="allSets">ALL Sets</string>
+    <string name="Name">Name</string>
+
+    <!--    menu set Item -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="importt">Import</string>
+    <string name="importDirectly">Import Directly</string>
+    <string name="export">Export</string>
+    <string name="hide">Hide</string>
+
+    <!--    navigation Items -->
+
+    <string name="nv_item1">Item 1</string>
+    <string name="nv_item2">Item 2</string>
+    <string name="nv_item3">Item 3</string>
+
+    <!--    action Bar Menu Items -->
+    <string name="ac_item1">Save Data</string>
+    <string name="ac_item2">Display Hide Items</string>
+
+    <!-- values -->
+    <string name="level">Level : </string>
+    <string name="F_word.AddNewWords">TAP ADD BUTTON\nTO ADD NEW\nWORDS</string>
+    <string name="F_word.nothingFound">NOTHING FOUND!!</string>
+    <string name="F_word.nothingHere">NOTHING HERE</string>
+
+    <!--    word types not included (conjunctions, interjections)-->
+    <!--    https://dictionary.cambridge.org/grammar/british-grammar/word-classes-and-phrase-classes-->
+    <string name="wordType1">noun</string>
+    <string name="wordType2">Verb</string>
+    <string name="wordType3">adjective</string>
+    <string name="wordType4">adverb</string>
+    <string name="wordType5">preposition</string>
+    <string name="wordType6">pronoun</string>
+    <string name="wordType7">determiner</string>
+    <string name="select_items">Select items</string>
+    <string name="all_words">All Words</string>
+    <string name="favorite_words">Favorite Words</string>
+    <string name="remembered_words">Remembered Words</string>
+    <string name="deleted_words">Deleted Words</string>
+    <string name="edit_name">Edit Name</string>
+    <string name="change_color">Change Color</string>
+    <string name="select_items_2">Select Items</string>
+    <string name="merge_items">Merge Items</string>
+    <string name="move_to">Move To</string>
+    <string name="add_word">Add Word</string>
+    <string name="select_all">Select All</string>
+    <string name="select_only_favorite">Select Only Favorite</string>
+    <string name="select_only_remember">Select Only Remember</string>
+    <string name="select">Select</string>
+    <string name="copy_to">Copy To</string>
+    <string name="ask_delete_op_1">Remove Them From The App (Not Recommended)</string>
+    <string name="ask_delete_op_2">Remove Them Just From Collections</string>
+    <string name="ask_delete_op_3">Just Hide Them</string>
+    <string name="ask_delete_op_1_info">The Application Can\'t Remember Your Deleted Words Later And Their Information In Case You Want To Restore Them.</string>
+    <string name="ask_delete_op_2_info">The Application Can Remember Deleted Words And Prevent From Insert Them Later From Pdf, Files Or Text Unless In Case You Add It Directly</string>
+    <string name="ask_delete_op_3_info">Just Hide Them, The Application Can Remember Them, I Feel Comfortable When I See List Of Deleted Words Empty (You Can See Hidden Items)</string>
+    <string name="unhide_items">unHide items</string>
+    <string name="categories">Categories</string>
+    <string name="collections">Collections</string>
+    <string name="make_as_not_favorite">Make As Not Favorite</string>
+    <string name="make_as_not_remember">Make As Not Remember</string>
+    <string name="select_by_ranges">Select By Ranges</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/mainActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:elevation="10dp"
+        android:background="@color/transparent2"
+        >
+
+        <ImageView
+            android:id="@+id/navigationButton"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_menu"
+            style="@style/MainActivity_Action_Bar"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/SetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="170dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:text="e thrtyr e thrtyr e thrtyr e gfhf hfghr"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_toEndOf="@+id/navigationButton"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <com.example.englishflashcards.Classes.Costum.MyEditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="search"
+                android:textColorHint="@color/gray2"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/searchActionBar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_search_24"
+                style="@style/MainActivity_Action_Bar"
+                android:layout_marginEnd="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/filterActionBar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_filter"
+                style="@style/MainActivity_Action_Bar"
+                android:layout_marginEnd="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/popUpMenuActionBar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_more_vert_24"
+                style="@style/MainActivity_Action_Bar"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

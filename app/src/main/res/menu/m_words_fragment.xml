@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/MoveTo"
+        android:title="@string/move_to"
+        />
+    <item android:id="@+id/CopyTo"
+        android:title="@string/copy_to"
+        />
+    <item android:id="@+id/Delete"
+        android:title="@string/delete"
+        />
+
+    <item android:id="@+id/Select"
+        android:title="@string/select"
+        android:enabled="false"
+        >
+        <menu>
+
+            <item android:id="@+id/SelectAll"
+                android:title="@string/select_all"
+                />
+            <item android:id="@+id/SelectOnlyFavorite"
+                android:title="@string/select_only_favorite"
+                />
+            <item android:id="@+id/SelectOnlyRemember"
+                android:title="@string/select_only_remember"
+                />
+
+            <item android:id="@+id/SelectByNumber"
+                android:title="@string/select_by_ranges"
+                />
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/DisplayHideItems"
+        android:title="@string/ac_item2"
+        android:checkable="true"
+        />
+
+    <item android:id="@+id/unHide"
+        android:title="@string/unhide_items"
+        android:enabled="false"
+        />
+
+    <item android:id="@+id/setNotFavorite"
+        android:title="@string/make_as_not_favorite"
+        />
+
+    <item android:id="@+id/setNotRemember"
+        android:title="@string/make_as_not_remember"
+        />
+
+</menu>

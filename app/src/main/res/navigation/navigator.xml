@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigator"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.englishflashcards.Fragments.F_Collections"
+        android:label="fragment_blank"
+        tools:layout="@layout/f_collection_names" >
+        <action
+            android:id="@+id/action_blankFragment_to_f_Words"
+            app:destination="@id/f_Words" />
+        <action
+            android:id="@+id/action_blankFragment_to_practiceChunks2"
+            app:destination="@id/practiceChunks" />
+        <action
+            android:id="@+id/action_blankFragment_to_f_WordEdit"
+            app:destination="@id/f_WordEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_Words"
+        android:name="com.example.englishflashcards.Fragments.F_Words"
+        android:label="f__words"
+        tools:layout="@layout/f__words" >
+        <action
+            android:id="@+id/action_f_Words_to_f_WordEdit"
+            app:destination="@id/f_WordEdit" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_WordEdit"
+        android:name="com.example.englishflashcards.Fragments.F_WordEdit"
+        android:label="f_word_edit"
+        tools:layout="@layout/f_word_edit" />
+    <fragment
+        android:id="@+id/f_Practice2"
+        android:name="com.example.englishflashcards.Fragments.F_Practice"
+        android:label="F_Practice" >
+        <action
+            android:id="@+id/action_f_Practice2_to_f_WordEdit"
+            app:destination="@id/f_WordEdit" />
+        <action
+            android:id="@+id/action_f_Practice2_to_f_EndPractice"
+            app:destination="@id/f_EndPractice" />
+    </fragment>
+    <fragment
+        android:id="@+id/practiceChunks"
+        android:name="com.example.englishflashcards.Fragments.F_PracticeChunks"
+        android:label="f_practice_chunks"
+        tools:layout="@layout/f_practice_chunks" >
+        <action
+            android:id="@+id/action_practiceChunks_to_f_Practice2"
+            app:destination="@id/f_Practice2" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_EndPractice"
+        android:name="com.example.englishflashcards.Fragments.F_EndPractice"
+        android:label="f_end_practice"
+        tools:layout="@layout/f_end_practice" >
+        <action
+            android:id="@+id/action_f_EndPractice_to_practiceChunks"
+            app:destination="@id/practiceChunks"
+            app:popUpTo="@id/practiceChunks"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+</navigation>

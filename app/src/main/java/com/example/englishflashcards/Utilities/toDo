@@ -1,0 +1,125 @@
+work
+TODO : make action bar and navigation bar (menu, Title)
+TODO : make set fragment
+TODO : make collection fragment
+TODO : make word fragment
+TODO : make edit word fragment
+TODO : make practice fragment
+
+TODO : complete all popup Menu
+TODO : complete all sort
+TODO : slid bar
+TODO : export the data base
+TODO : make global detail
+
+
+
+
+
+
+//TODO : later
+//TODO : remember delete time, sort by delete time
+
+get
+E:\projects\android\wokingOn\NovelWords\app\src\main
+
+features
+-> make word tags
+-> make word url
+-> make word image
+
+
+//healper
+val width = (context.resources.displayMetrics.widthPixels * 0.90).toInt()
+val height = (context.resources.displayMetrics.heightPixels * 0.90).toInt()
+1601211790332
+dialog.window?.setLayout(width, height)
+
+//style
+<style name="MyTvStyle">
+  <item name="android:textSize">40sp</item>
+</style>
+
+//to know
+//wordsRecyclerView.addItemDecoration()
+
+image/jpeg
+audio/mpeg4-generic
+text/html
+audio/mpeg
+audio/aac
+audio/wav
+audio/ogg
+audio/midi
+audio/x-ms-wma
+video/mp4
+video/x-msvideo
+video/x-ms-wmv
+image/png
+image/jpeg
+image/gif
+.xml ->text/xml
+.txt -> text/plain
+.cfg -> text/plain
+.csv -> text/plain
+.conf -> text/plain
+.rc -> text/plain
+.htm -> text/html
+.html -> text/html
+.pdf -> application/pdf
+.apk -> application/vnd.android.package-archive
+
+//interface
+//--> this is all on the fragment
+
+private var listener : NotifyActivity? = null
+listener?.notifyActivity()
+
+override fun onAttach(context: Context) {
+    super.onAttach(context)
+    listener = context as? NotifyActivity
+    if (listener == null) {
+        throw ClassCastException("$context must implement OnArticleSelectedListener")
+    }
+}
+
+interface NotifyActivity{
+    fun notifyActivity()
+}
+
+
+    /*fun getCollectionInfoDetail(collection: Collection) : Array<String>{
+        val i = collection.getInfo()
+        val result = Array<String>(2){""}
+        result[0] += "Cards : \n"
+        result[0] += "Memorized Cards : \n"
+        result[0] += "Favorite Cards : \n"
+        result[0] += "Deleted Cards : \n"
+        result[0] += "Hidden Cards : \n"
+        result[0] += "Max Frequency : \n"
+        result[0] += "Max Level : \n"
+        result[0] += "Cards With Definition(s) : \n"
+        result[0] += "Cards With Example(s) : \n"
+        result[0] += "Reviewed Cards: \n"
+        result[0] += "Daily Reviewed Cards : \n"
+        result[0] += "Cards That Will Be Reviewed : \n"
+        result[0] += "Max Reviewed Time: \n"
+        result[0] += "Min Reviewed Time: \n"
+
+        result[1] += "${i.cardsNumber}\n"
+        result[1] += "${i.memorizedCards}\n"
+        result[1] += "${i.favorite}\n"
+        result[1] += "${i.deletedCards}\n"
+        result[1] += "${i.hideCards}\n"
+        result[1] += "${i.maxFrequency}\n"
+        result[1] += "${i.maxLevel}\n"
+        result[1] += "${i.cardsWithDefinitions}\n"
+        result[1] += "${i.cardsWithExamples}\n"
+        result[1] += "${i.reviewedCards}\n"
+        result[1] += "${dailyReviewedCards / (Settings.passedDays + 1)}\n"
+        result[1] += "${i.cardsWillReviewed}\n"
+        result[1] += "${Lib.fromSecondsToDate(i.maxReviewedTime)}\n"
+        result[1] += "${Lib.fromSecondsToDate(i.minReviewedTime)}\n"
+
+        return result
+    }*/

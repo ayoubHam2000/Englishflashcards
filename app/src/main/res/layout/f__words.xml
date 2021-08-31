@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.F_Words">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/words_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarSize="15dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar"
+            app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+            app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+            app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+            app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+            app:fastScrollEnabled="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/t_createNewSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:id="@+id/theText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:text="@string/F_word.nothingFound"
+                android:textColor="@color/gray"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/addWord"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="20dp"
+            android:padding="15dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic__add"
+            app:tint="@color/white"
+            android:background="@drawable/my_circle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/addLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/addWordLayoutColor"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:id="@+id/addFromPdfOrTextLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="90dp"
+                android:gravity="center"
+                android:elevation="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Text Or Pdf"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/box_width_radius"
+                    android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/addFromPdfOrText"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="7dp"
+
+                    android:src="@drawable/ic_word_list"
+                    app:tint="@color/white"
+                    android:background="@drawable/my_circle"
+                    android:backgroundTint="@color/green"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addDirectlyLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="150dp"
+                android:gravity="center"
+                android:elevation="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Input"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/box_width_radius"
+                    android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/addDirectly"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_letteri"
+                    app:tint="@color/white"
+                    android:background="@drawable/my_circle"
+                    android:backgroundTint="@color/azure"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addSimpleWordLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="29dp"
+                android:layout_marginBottom="210dp"
+                android:gravity="center"
+                android:elevation="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Word"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/box_width_radius"
+                    android:backgroundTint="@color/white"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/addSimpleWord"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_sword"
+                    app:tint="@color/white"
+                    android:background="@drawable/my_circle"
+                    android:backgroundTint="@color/orange"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/actionWords"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my_create_collection_btn"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:paddingHorizontal="15dp"
+            android:text="Delete  (3)"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="25dp"
+    >
+
+
+    <include
+        layout="@layout/d_header_1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/theColor"
+            style="@style/D_pickColor_image"
+            android:backgroundTint="@color/orange"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/theColors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/orange"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/newColor1"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/chartreuse"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/cyan"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/blue"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/violet"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/magenta"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/newColor4"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/newColor11"
+                />
+            <ImageView
+                style="@style/D_pickColor_image"
+                android:backgroundTint="@color/newColor12"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/openCloseAdvanceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Advance"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/openCloseAdvance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_keyboard_arrow_down_24"
+            android:backgroundTint="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/advanceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <TextView
+                android:id="@+id/redColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="255"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <SeekBar
+                android:id="@+id/redController"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressBackgroundTint="@color/red"
+                android:progressTint="@color/red"
+                android:thumbTint="@color/red"
+                android:progress="50"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <TextView
+                android:id="@+id/greenColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="255"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <SeekBar
+                android:id="@+id/greenController"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressBackgroundTint="@color/green"
+                android:progressTint="@color/green"
+                android:thumbTint="@color/green"
+                android:progress="50"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="sans-serif-condensed"
+            >
+
+            <TextView
+                android:id="@+id/blueColorText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="255"
+                android:textSize="12sp"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                />
+
+            <SeekBar
+                android:id="@+id/blueController"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressBackgroundTint="@color/blue"
+                android:progressTint="@color/blue"
+                android:thumbTint="@color/blue"
+                android:progress="50"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

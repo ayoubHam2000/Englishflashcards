@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:id="@+id/filterMode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:layout_marginBottom="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort Type"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/sortTypesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/sortAlpha"
+                    style="@style/radioBoxOfWords"
+                    android:text="Alphabetic"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/sortCreated"
+                    style="@style/radioBoxOfWords"
+                    android:text="Created Time"
+                    />
+                <RadioButton
+                    android:id="@+id/sortModified"
+                    style="@style/radioBoxOfWords"
+                    android:text="Last Modified"
+                    />
+                <RadioButton
+                    android:id="@+id/sortLastViewTime"
+                    style="@style/radioBoxOfWords"
+                    android:text="Last View"
+                    />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/my_doted_line"
+                    android:layout_marginTop="15dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/ordersLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/Ascending"
+                    style="@style/radioBoxOfWords"
+                    android:text="Ascending"
+                    android:checked="true"
+                    />
+                <RadioButton
+                    android:id="@+id/Descending"
+                    style="@style/radioBoxOfWords"
+                    android:text="Descending"
+                    />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/my_doted_line"
+                    android:layout_marginTop="15dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/categoryHideItem"
+                    style="@style/radioBoxOfWords"
+                    android:text="Hide items On Top"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/askLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <TextView
+            android:id="@+id/deny"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/orangeWhite2"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/approve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="OK"
+            android:textSize="18sp"
+            android:textColor="@color/orangeWhite2"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
